@@ -111,7 +111,7 @@ Which URL do you navigate to in order to check that the ELK server is running?
 
 Specific commands the user will need to run to download the playbook, update the files, etc:
 
- - ssh admin_account_name@jumpboxpublicIP
+ - ssh sysadmin@52.159.117.64
  - sudo docker ps -a
  - sudo docker start "dockername"
  - sudo docker attach "dockername"
