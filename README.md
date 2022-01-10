@@ -111,15 +111,15 @@ Which URL do you navigate to in order to check that the ELK server is running?
 
 Specific commands the user will need to run to download the playbook, update the files, etc:
 
-ssh admin_account_name@jumpboxpublicIP
-sudo docker ps -a
-sudo docker start "dockername"
-sudo docker attach "dockername"
-cd /etc/ansible
-ansible-playbook ./elk.yml (This will install and launch the Elk Server)
-ansible-playbook ./filebeat-playbook.yml (This will install Filebeat)
-ansible-playbook ./metricbeat-playbook.yml (This will install Metricbeat)
-Open a new browser window and navigate to 13.77.202.108:5601/app/kibana (This opens the Kibana web portal)
+ - ssh admin_account_name@jumpboxpublicIP
+ - sudo docker ps -a
+ - sudo docker start "dockername"
+ - sudo docker attach "dockername"
+ - cd /etc/ansible
+ - ansible-playbook ./elk.yml (This will install and launch the Elk Server)
+ - ansible-playbook ./filebeat-playbook.yml (This will install Filebeat)
+ - ansible-playbook ./metricbeat-playbook.yml (This will install Metricbeat)
+ - Open a new browser window and navigate to 13.77.202.108:5601/app/kibana (This opens the Kibana web portal)
 
 References Filebeat: Lightweight Log Analysis & Elasticsearch. Elastic. (2021). Retrieved December 18, 2021, from https://www.elastic.co/beats/filebeat
 
